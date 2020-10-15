@@ -1,3 +1,6 @@
 ---
-  - name: Echo hello world
-    shell: "echo Hello World"
+  - name: test
+    hosts: centos
+    tasks: 
+     - name: Echo hello world
+       shell: "echo Hello World"
