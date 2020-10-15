@@ -1,6 +1,8 @@
 ---
-- name: test
+- name: Remove Apache
   hosts: centos
   tasks: 
-  - name: Echo hello world
-    shell: echo "Hello World"
+  - name: Remove Apache
+    yum: 
+     name: httpd
+     state: absent
