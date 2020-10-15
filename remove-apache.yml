@@ -6,4 +6,4 @@
   - name: Remove Apache
     yum: 
      name: httpd
-     state: absent
+     state: present
