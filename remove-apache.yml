@@ -1,5 +1,6 @@
 ---
 - name: Remove Apache
+  become: yes
   hosts: centos
   tasks: 
   - name: Remove Apache
