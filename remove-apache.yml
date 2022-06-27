@@ -1,7 +1,7 @@
 ---
 - name: Check connectivity to remote servers
-  hosts: all #servergroup01
+  hosts: 192.168.121.131
   gather_facts: no
   tasks:
     - name: ping
-      win_ping:
+      ping:
