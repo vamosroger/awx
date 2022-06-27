@@ -1,9 +1,7 @@
 ---
-- name: Remove Apache
+- name: Ping
   become: yes
-  hosts: centos
+  hosts: all
   tasks: 
-  - name: Remove Apache
-    yum: 
-     name: httpd
-     state: present
+  - name: Test Ping
+    ping:
