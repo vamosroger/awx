@@ -1,6 +1,6 @@
 ---
 - name: Check connectivity to remote servers
-  hosts: Windows2k12
+  hosts: windows
   gather_facts: no
   tasks:
     - name: ping
