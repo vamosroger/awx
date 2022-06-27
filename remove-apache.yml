@@ -1,6 +1,6 @@
 ---
 - name: Check connectivity to remote servers
-  hosts: 192.168.121.131
+  hosts: Windows2k12
   gather_facts: no
   tasks:
     - name: ping
