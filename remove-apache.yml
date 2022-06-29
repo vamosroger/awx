@@ -1,7 +1,10 @@
 ---
 - name: Check connectivity to remote servers
-  hosts: all
-  gather_facts: yes
+- hosts: all
+  gather_facts: true
+
   tasks:
-  - debug: 
-    var: ansible_facts
+  - setup:
+    register: ansible_facts
+  - debug: item
+    with_dict: ansible_facts
