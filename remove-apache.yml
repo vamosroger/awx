@@ -3,5 +3,5 @@
   hosts: all
   gather_facts: yes
   tasks:
-    - debug: 
-      var: ansible_facts
+  - debug: 
+    var: ansible_facts
